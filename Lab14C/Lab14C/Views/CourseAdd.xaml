@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab14C.Views.CourseAdd">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ingrese el Nombre del Curso"/>
+            <Label Text="{Binding CourseName}" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Ingrese la descripcion del Curso"/>
+            <Label Text="{Binding CourseDescription}" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Ingrese el Credito del Curso"/>
+            <Label Text="{Binding CourseCredit}" HorizontalOptions="FillAndExpand"/>
+            <Label Text="Ingrese la fecha de Incio del Curso"/>
+            <DatePicker Text="{Binding CourseStartDate}" />
+            <Button Command="{Binding OtherViewCommand}" Text="Ir a Mostrar la Lista"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
